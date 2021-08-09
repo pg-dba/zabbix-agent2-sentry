@@ -15,6 +15,7 @@ RUN set -eux && \
             pacman \
             fakeroot \
             zlib-dev && \
+    apk add --update curl && \
     mkdir /sentry && \
     cd /sentry/ && \
     git clone https://github.com/zarplata/zabbix-agent-extension-sentry.git && \
